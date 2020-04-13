@@ -1,0 +1,26 @@
+Chat Application
+
+For compilation of the files you can directly use bash compile.sh 
+
+Client End :
+    Steps to Connect -
+        1. To open the connection to the server first make sure that the server is up else the connection will directly be rejected.
+        2. After compilation of the .java files use javac client <client_name> <mode> <ip_of_server>
+            where : client_name is the name is the name you want to allocate to your client
+                    mode is the mode of service 1 : Unencrypted
+                                                2 : Encrypted
+                                                3 : Encrypted wiht Signature
+        3. After opening the connection the user itself gets registered if the username is valid
+        4. To send a message use the format @<recipient_name> <message>
+            where recipient_name is the name of the person whom you want to send message    
+                  message is your message
+        
+
+Server End :
+    Steps to Start -
+        1. To start the server use java server <mode>
+            where mode is the mode of service 1 : Unencrypted
+                                              2 : Encrypted
+                                              3 : Encrypted wiht Signature
+
+   
